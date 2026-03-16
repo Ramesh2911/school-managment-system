@@ -20,8 +20,8 @@ const Sidebar = ({ open }) => {
 
   const adminMenu = [
     { name: "Dashboard", icon: <FaTachometerAlt />, path: "/dashboard" },
-    { name: "Teacher", icon: <FaChalkboardTeacher />, path: "#" },
-    { name: "Student", icon: <FaUsers />, path: "#" },
+    { name: "Teacher", icon: <FaChalkboardTeacher />, path: "/teacher" },
+    { name: "Student", icon: <FaUsers />, path: "/student" },
     { name: "Class & Subject", icon: <FaBook />, path: "#" },
     { name: "Attendance", icon: <FaClipboardList />, path: "#" },
     { name: "Exams", icon: <FaChartBar />, path: "#" },
@@ -62,8 +62,8 @@ const Sidebar = ({ open }) => {
     role === "admin"
       ? "#0f4c81"
       : role === "teacher"
-      ? "#2f8f6b"
-      : "#7a4dd8";
+        ? "#2f8f6b"
+        : "#7a4dd8";
 
   return (
     <div

@@ -26,7 +26,7 @@ const Login = () => {
       localStorage.setItem("token", "demo-token");
       localStorage.setItem("role", user.role);
 
-      navigate("/dashboard");
+      navigate("/dashboard", { replace: true });
 
     } else {
 

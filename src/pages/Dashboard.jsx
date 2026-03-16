@@ -9,7 +9,9 @@ import {
 
 const Dashboard = () => {
 
-  const role = localStorage.getItem("role");
+  const role = localStorage.getItem("role")?.toLowerCase().trim();
+  console.log(role, 'll');
+
 
   const adminCards = [
     { title: "Students", count: 1200, icon: <FaUsers />, color: "#3498db" },
